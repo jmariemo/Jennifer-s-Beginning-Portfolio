@@ -1,0 +1,79 @@
+* {
+    color:rgb(27, 47, 68);
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../images/cityscape.jpg");
+    background-color: rgb(236, 192, 137);
+}
+
+.navigation {
+    background-color:rgb(236, 192, 137);
+    width: 100%;
+    position: fixed;
+    box-shadow: 0 0 20px 40px rgb(236, 192, 137);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+nav h1 {
+    font-family: Didot;
+}
+
+nav a {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+p, h3, img {
+    margin: 10px;
+}
+
+.intro {
+    background-color: rgb(236, 192, 137);
+    height: 90px;
+    width: 100%;
+    position: relative;
+    top: 170px;
+    border-radius: 5px;
+    overflow: hidden;
+    font-family: Didot;
+}
+
+.bio {
+    background-color: rgb(236, 192, 137);
+    height: 200px;
+    width: 100%;
+    position: relative;
+    top: 340px;
+    border-radius: 5px;
+    overflow: hidden;
+    font-family: Didot;
+}
+
+.bio img {
+    height: 100px;
+}
+
+.sidebar {
+    height: 100%;
+    width: 150px;
+    padding-top: 40px;
+    background-color: rgb(236, 192, 137);
+}
+
+
+@media screen and (max-width: 768px) {
+    .navigation {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .intro {
+        position: relative;
+        top: 220px;
+    }
+}
