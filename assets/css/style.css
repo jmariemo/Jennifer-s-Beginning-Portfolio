@@ -12,6 +12,7 @@ body {
     background-color:rgb(236, 192, 137);
     width: 100%;
     position: fixed;
+    z-index: 1;
     box-shadow: 0 0 20px 40px rgb(236, 192, 137);
     display: flex;
     align-items: flex-end;
@@ -24,6 +25,7 @@ nav h1 {
 
 nav a {
     font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
 }
 
 p, h3, img {
@@ -62,7 +64,6 @@ p, h3, img {
     padding-top: 40px;
     background-color: rgb(236, 192, 137);
 }
-
 
 @media screen and (max-width: 768px) {
     .navigation {
