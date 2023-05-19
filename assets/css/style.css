@@ -1,23 +1,18 @@
-* {
-    color:rgb(27, 47, 68);
-    box-sizing: border-box;
+html {
+    background: url("/assets/images/cityscape.jpg") no-repeat center center fixed;
+    background-color: rgb(244, 223, 213);
+    background-size: cover;
 }
 
 body {
-    background-image: url("../images/cityscape.jpg");
-    background-color: rgb(236, 192, 137);
-    display: flex;
-}
-
-.navigation {
-    background-color:rgb(236, 192, 137);
     width: 100%;
-    position: fixed;
-    z-index: 1;
-    box-shadow: 0 0 20px 40px rgb(236, 192, 137);
+    margin: 0 auto;
+    background-size: auto;
+    font-family: Didot;
+    color:rgb(27, 47, 68);
     display: flex;
-    align-items: flex-end;
-    justify-content: space-around;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 nav h1 {
@@ -29,56 +24,53 @@ nav a {
     text-decoration: none;
 }
 
-p, h3, img {
-    margin: 10px;
+.navigation {
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    background-color:rgb(244, 223, 213);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 0 20px 40px rgb(244, 223, 213);
+    align-items: flex-end;
 }
 
-.page {
-    margin-top: 150px;
+.main {
+    display: flex;
+    margin: 8%;
     display: flex;
     gap: 50px 70px;
 }
 
-.intro {
-    background-color: rgb(236, 192, 137);
+.section {
+    background-color:rgb(244, 223, 213);
     height: 100%;
     width: 100%;
     border-radius: 5px;
-    font-family: Didot;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.bio {
-    background-color: rgb(236, 192, 137);
-    height: 100%;
-    width: 100%;
+p, h3, img {
+    margin: 10px;
+    
+}
+
+img {
+    max-width: 80%;
+    height: auto;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+    background-color: rgb(244, 223, 213);
     border-radius: 5px;
     font-family: Didot;
 }
-
-.bio img {
-    height: 100px;
-}
-
-.sidebar {
-    background-color: rgb(236, 192, 137);
-    height: 100%;
-    width: 80%;
-    border-radius: 5px;
-    font-family: Didot;
-}
-
-/* footer {
-    position: fixed;
-    height: 8%;
-    width: 100%;
-    background-color: rgb(236, 192, 137);
-    border-radius: 5px;
-    font-family: Didot;
-}
-
-footer p {
-    text-align: center;
-} */
 
 /* media queries */
 
@@ -88,15 +80,17 @@ footer p {
         align-items: center;
     }
 
-    .page {
+    .main {
         margin-top: 260px;
         flex-direction: column;
     }
 }
 
-
 /* pseudo class styling */
+a:visited {
+    color:rgb(27, 47, 68);
+}
 
-nav a:hover {
+a:hover {
     color: white;
 }
