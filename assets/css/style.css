@@ -38,8 +38,7 @@ nav a {
 
 .main {
     display: flex;
-    margin: 8%;
-    display: flex;
+    margin: 12% 2%;
     gap: 50px 70px;
 }
 
@@ -47,6 +46,7 @@ nav a {
     background-color:rgb(244, 223, 213);
     height: 100%;
     width: 100%;
+    padding: 1%;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
@@ -55,7 +55,6 @@ nav a {
 
 p, h3, img {
     margin: 10px;
-    
 }
 
 img {
@@ -81,8 +80,8 @@ footer {
     }
 
     .main {
-        margin-top: 260px;
         flex-direction: column;
+        margin: 58% 2% 10%;
     }
 }
 
