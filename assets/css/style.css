@@ -1,6 +1,6 @@
 html {
-    background: url("/assets/images/cityscape.jpg") no-repeat center center fixed;
-    /* background-color: rgb(244, 223, 213); */
+    background: url("../assets/images/cityscape.jpg") no-repeat center center fixed;
+    background-color: rgb(244, 223, 213);
     background-size: cover;
 }
 
