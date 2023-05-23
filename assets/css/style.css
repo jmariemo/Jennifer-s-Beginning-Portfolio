@@ -5,21 +5,9 @@
     padding: 0;
 }
 
-:root {
-    /*font-size: 32px;*/
-}
-
-/* 
-html {
-    background: url("../images/cityscape.jpg") no-repeat center center fixed;
-    background-color: rgb(244, 223, 213);
-    background-size: cover;
-} */
-
 body {
     width: 100%;
     margin: 0 auto;
-    /* background-size: auto; */
     font-family: Didot;
     color:rgb(27, 47, 68);
     display: flex;
@@ -46,7 +34,6 @@ nav a {
     background-color:rgb(244, 223, 213);
     display: flex;
     justify-content: space-around;
-    align-items: center;
     box-shadow: 0 0 20px 40px rgb(244, 223, 213);
     align-items: flex-end;
     margin-top: 1rem;
@@ -54,14 +41,20 @@ nav a {
 
 .main {
     display: flex;
+    flex-direction: column;
     margin: 12% 2%;
     gap: 50px 70px;
 }
 
-.section {
+.top {
+    display: flex;
+    gap: 50px 70px;
+}
+
+.top .section {
     background-color:rgb(244, 223, 213);
     height: 100%;
-    width: 100%;
+    width: 80%;
     padding: 1%;
     border-radius: 5px;
     display: flex;
@@ -69,12 +62,48 @@ nav a {
     align-items: center;
 }
 
+#jennifer-headshot {
+    max-width: 40%;
+    height: auto;
+}
+
 p, h3, img {
     margin: 10px;
 }
 
-img {
-    max-width: 80%;
+.bottom {
+    display: flex;
+    justify-content: center;
+}
+
+.bottom .section {
+    background-color:rgb(244, 223, 213);
+    height: 100%;
+    width: 80%;
+    padding: 1%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section img {
+    max-width: 39%;
+    height: auto;
+}
+
+.bottom .double {
+    display: flex;
+}
+
+.pic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.double img {
+    max-width: 37%;
     height: auto;
 }
 
@@ -96,8 +125,7 @@ footer {
     }
 
     .main {
-        flex-direction: column;
-        margin: 58% 2% 10%;
+        margin: 32% 2%;
     }
 }
 
