@@ -1,18 +1,33 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /*font-size: 32px;*/
+}
+
+/* 
 html {
     background: url("../images/cityscape.jpg") no-repeat center center fixed;
     background-color: rgb(244, 223, 213);
     background-size: cover;
-}
+} */
 
 body {
     width: 100%;
     margin: 0 auto;
-    background-size: auto;
+    /* background-size: auto; */
     font-family: Didot;
     color:rgb(27, 47, 68);
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background: url("../images/cityscape.jpg") no-repeat center center fixed;
+    background-color: rgb(244, 223, 213);
+    background-size: cover;
 }
 
 nav h1 {
@@ -34,6 +49,7 @@ nav a {
     align-items: center;
     box-shadow: 0 0 20px 40px rgb(244, 223, 213);
     align-items: flex-end;
+    margin-top: 1rem;
 }
 
 .main {
