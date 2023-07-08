@@ -96,15 +96,10 @@ p, h3, img {
     display: flex;
 }
 
-.pic {
+.work-box {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.double img {
-    max-width: 37%;
-    height: auto;
 }
 
 footer {
